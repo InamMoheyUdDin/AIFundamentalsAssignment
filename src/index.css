@@ -107,6 +107,17 @@ body {
   color: #e03131;
 }
 
+.status,
+.error {
+  font-size: 1.5rem;
+  margin: 1.2rem;
+}
+
+.error,
+.form-error {
+  color: #c92a2a;
+}
+
 form {
   font-size: 1.6rem;
   display: grid;
@@ -158,6 +169,11 @@ select:focus {
 form .button {
   margin-top: 0.6rem;
   grid-column: 2;
+}
+
+.form-error {
+  grid-column: 1 / -1;
+  font-size: 1.3rem;
 }
 
 form h2 {

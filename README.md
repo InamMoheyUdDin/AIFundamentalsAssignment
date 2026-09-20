@@ -1,4 +1,39 @@
-# Getting Started with Create React App
+# Eat-N-Split
+
+A full-stack bill-splitting app. Friends and split balances are stored locally in SQLite.
+
+Node.js 22.13 or newer is required because the backend uses Node's built-in SQLite support.
+
+## Run locally
+
+Use two terminals during development:
+
+```bash
+npm run server
+npm start
+```
+
+The React development server proxies API requests to `http://localhost:4000`. The API creates its local database at `data/eat-n-split.sqlite`; this file is intentionally ignored by Git.
+
+For a production-style local run, build the client and start the server:
+
+```bash
+npm run build
+npm run server
+```
+
+## Tests
+
+```bash
+npm test -- --watchAll=false
+npm run test:server
+```
+
+The frontend tests cover API-driven loading and add-friend validation/creation. API tests cover seeding, validation, creation, balance updates, and missing friends.
+
+---
+
+# Create React App reference
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
